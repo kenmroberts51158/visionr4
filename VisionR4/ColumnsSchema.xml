@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<columns>
+  <column name="TABLE_NAME" />
+  <column name="COLUMN_NAME" />
+  <column name="REMARKS" />
+  <column name="TYPE_NAME" />
+  <column name="COLUMN_SIZE" />
+  <column name="DECIMAL_DIGITS" />
+  <column name="IS_NULLABLE" />
+  <column name="TABLE_SCHEM" />
+  <column name="DATA_TYPE" />
+  <column name="BUFFER_LENGTH" />
+  <column name="SQL_DATA_TYPE" />
+  <column name="ORDINAL_POSITION" />
+  <column name="TABLE_CAT" />
+  <column name="NUM_PREC_RADIX" />
+  <column name="NULLABLE" />
+  <column name="COLUMN_DEF" />
+  <column name="SQL_DATETIME_SUB" />
+  <column name="CHAR_OCTET_LENGTH" />
+</columns>
