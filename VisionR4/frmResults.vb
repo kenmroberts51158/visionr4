@@ -88,7 +88,7 @@ Public Class frmResults
     End Sub
 
     Private Sub frmResults2_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
-        Me.DataGridView1.Width = Me.Width - 10
+        Me.DataGridView1.Width = Me.Width - 25
         Me.DataGridView1.Height = Me.Height - 100
     End Sub
 
