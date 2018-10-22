@@ -35,6 +35,7 @@ Public Class mdiForm
 
         Me.WindowState = My.Settings.WindowState
         Me.ClientSize = My.Settings.ClientSize
+
     End Sub
 
     Private Sub ExitApplication()
@@ -186,5 +187,13 @@ Public Class mdiForm
 
     Private Sub ToolStripButton10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton10.Click
         Me.showProcessScript()
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        Me.FontDialog1.Font = My.Settings.MyFont
+
+        If Me.FontDialog1.ShowDialog() = DialogResult.OK Then
+            My.Settings.MyFont = Me.FontDialog1.Font
+        End If
     End Sub
 End Class

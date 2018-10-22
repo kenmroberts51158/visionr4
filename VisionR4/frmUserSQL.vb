@@ -38,6 +38,8 @@ Public Class frmUserSQL
         Me.txtUserSQL.Text = mySQL
         Me.txtUserId.Text = Me.visionUser.UserID
         Me.txtPassword.Text = Me.visionUser.Password
+        Me.txtUserSQL.Font = My.Settings.MyFont
+
     End Sub
 
     Protected Overrides Sub Finalize()
@@ -263,4 +265,5 @@ Public Class frmUserSQL
         Me.txtUserId.Text = Me.visionUser.UserID
         Me.txtPassword.Text = Me.visionUser.Password
     End Sub
+
 End Class

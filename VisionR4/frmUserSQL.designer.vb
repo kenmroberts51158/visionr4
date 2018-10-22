@@ -91,7 +91,7 @@ Partial Class frmUserSQL
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RunToolStripMenuItem, Me.ToolStripSeparator3, Me.SaveQueryToolStripMenuItem, Me.CopyToClipboardToolStripMenuItem, Me.ToolStripMenuItem1, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'RunToolStripMenuItem
@@ -101,13 +101,13 @@ Partial Class frmUserSQL
         Me.RunToolStripMenuItem.Name = "RunToolStripMenuItem"
         Me.RunToolStripMenuItem.ShortcutKeyDisplayString = "F5"
         Me.RunToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.RunToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.RunToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
         Me.RunToolStripMenuItem.Text = "&Run..."
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(191, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(205, 6)
         '
         'SaveQueryToolStripMenuItem
         '
@@ -115,7 +115,7 @@ Partial Class frmUserSQL
         Me.SaveQueryToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveQueryToolStripMenuItem.Name = "SaveQueryToolStripMenuItem"
         Me.SaveQueryToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SaveQueryToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.SaveQueryToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
         Me.SaveQueryToolStripMenuItem.Text = "S&ave Query..."
         '
         'CopyToClipboardToolStripMenuItem
@@ -124,7 +124,7 @@ Partial Class frmUserSQL
         Me.CopyToClipboardToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToClipboardToolStripMenuItem.Name = "CopyToClipboardToolStripMenuItem"
         Me.CopyToClipboardToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.B), System.Windows.Forms.Keys)
-        Me.CopyToClipboardToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.CopyToClipboardToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
         Me.CopyToClipboardToolStripMenuItem.Text = "Copy to Clip&board"
         '
         'ToolStripMenuItem1
@@ -133,49 +133,49 @@ Partial Class frmUserSQL
         Me.ToolStripMenuItem1.Image = CType(resources.GetObject("ToolStripMenuItem1.Image"), System.Drawing.Image)
         Me.ToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(194, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(208, 22)
         Me.ToolStripMenuItem1.Text = "Insert Template"
         '
         'UpdateToolStripMenuItem1
         '
         Me.UpdateToolStripMenuItem1.Name = "UpdateToolStripMenuItem1"
-        Me.UpdateToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.UpdateToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.UpdateToolStripMenuItem1.Text = "Update"
         '
         'InsertToolStripMenuItem1
         '
         Me.InsertToolStripMenuItem1.Name = "InsertToolStripMenuItem1"
-        Me.InsertToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.InsertToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.InsertToolStripMenuItem1.Text = "Insert"
         '
         'JoinToolStripMenuItem1
         '
         Me.JoinToolStripMenuItem1.Name = "JoinToolStripMenuItem1"
-        Me.JoinToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.JoinToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.JoinToolStripMenuItem1.Text = "Join"
         '
         'OuterJoinToolStripMenuItem1
         '
         Me.OuterJoinToolStripMenuItem1.Name = "OuterJoinToolStripMenuItem1"
-        Me.OuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.OuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.OuterJoinToolStripMenuItem1.Text = "Outer Join"
         '
         'LeftOuterJoinToolStripMenuItem1
         '
         Me.LeftOuterJoinToolStripMenuItem1.Name = "LeftOuterJoinToolStripMenuItem1"
-        Me.LeftOuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.LeftOuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.LeftOuterJoinToolStripMenuItem1.Text = "Left Outer Join"
         '
         'RightOuterJoinToolStripMenuItem1
         '
         Me.RightOuterJoinToolStripMenuItem1.Name = "RightOuterJoinToolStripMenuItem1"
-        Me.RightOuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.RightOuterJoinToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.RightOuterJoinToolStripMenuItem1.Text = "Right Outer Join"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(191, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(205, 6)
         '
         'ExitToolStripMenuItem
         '
@@ -183,7 +183,7 @@ Partial Class frmUserSQL
         Me.ExitToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ToolStrip1
@@ -240,37 +240,37 @@ Partial Class frmUserSQL
         'UpdateToolStripMenuItem
         '
         Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
-        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.UpdateToolStripMenuItem.Text = "Update"
         '
         'InsertToolStripMenuItem
         '
         Me.InsertToolStripMenuItem.Name = "InsertToolStripMenuItem"
-        Me.InsertToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InsertToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.InsertToolStripMenuItem.Text = "Insert"
         '
         'JoinToolStripMenuItem
         '
         Me.JoinToolStripMenuItem.Name = "JoinToolStripMenuItem"
-        Me.JoinToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.JoinToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.JoinToolStripMenuItem.Text = "Join"
         '
         'OuterJoinToolStripMenuItem
         '
         Me.OuterJoinToolStripMenuItem.Name = "OuterJoinToolStripMenuItem"
-        Me.OuterJoinToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OuterJoinToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.OuterJoinToolStripMenuItem.Text = "Outer Join"
         '
         'LeftOuterJoinToolStripMenuItem
         '
         Me.LeftOuterJoinToolStripMenuItem.Name = "LeftOuterJoinToolStripMenuItem"
-        Me.LeftOuterJoinToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LeftOuterJoinToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.LeftOuterJoinToolStripMenuItem.Text = "Left Outer Join"
         '
         'RightOuterJoinToolStripMenuItem
         '
         Me.RightOuterJoinToolStripMenuItem.Name = "RightOuterJoinToolStripMenuItem"
-        Me.RightOuterJoinToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RightOuterJoinToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.RightOuterJoinToolStripMenuItem.Text = "Right Outer Join"
         '
         'ToolStripSeparator1

@@ -54,6 +54,7 @@ Public Class frmResults
 
     Private Sub refreshData()
         Try
+            Me.DataGridView1.DefaultCellStyle.Font = My.Settings.MyFont
             Me.DataGridView1.CancelEdit()
         Catch ex As Exception
             'Cancel Edit cannot be called while in the onRowChange event. 

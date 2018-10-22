@@ -24,6 +24,7 @@ Public Class frmScript
         If selectedDSN.Length > 0 Then
             Me.cboDSNs.SelectedIndex = Me.cboDSNs.FindString(selectedDSN)
         End If
+        Me.txtUserSQL.Font = My.Settings.MyFont
     End Sub
 
     Private Sub frmScript_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
@@ -142,4 +143,5 @@ Public Class frmScript
     Private Sub ToolStripButton5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton5.Click
         Me.Close()
     End Sub
+
 End Class

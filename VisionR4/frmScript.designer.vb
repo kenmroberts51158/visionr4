@@ -23,34 +23,34 @@ Partial Class frmScript
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmScript))
-        Me.txtUserSQL = New System.Windows.Forms.TextBox
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RunScriptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.CopyToClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SaveToFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.OpenFromFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtPassword = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtUserId = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.btnRun = New System.Windows.Forms.Button
-        Me.cboDSNs = New System.Windows.Forms.ComboBox
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
+        Me.txtUserSQL = New System.Windows.Forms.TextBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RunScriptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CopyToClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenFromFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtUserId = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnRun = New System.Windows.Forms.Button()
+        Me.cboDSNs = New System.Windows.Forms.ComboBox()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -82,7 +82,7 @@ Partial Class frmScript
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RunScriptToolStripMenuItem, Me.ToolStripSeparator2, Me.CopyToClipboardToolStripMenuItem, Me.SaveToFileToolStripMenuItem, Me.OpenFromFileToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'RunScriptToolStripMenuItem
@@ -91,20 +91,20 @@ Partial Class frmScript
         Me.RunScriptToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RunScriptToolStripMenuItem.Name = "RunScriptToolStripMenuItem"
         Me.RunScriptToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.RunScriptToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.RunScriptToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.RunScriptToolStripMenuItem.Text = "Run script"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(168, 6)
         '
         'CopyToClipboardToolStripMenuItem
         '
         Me.CopyToClipboardToolStripMenuItem.Image = CType(resources.GetObject("CopyToClipboardToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CopyToClipboardToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToClipboardToolStripMenuItem.Name = "CopyToClipboardToolStripMenuItem"
-        Me.CopyToClipboardToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.CopyToClipboardToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.CopyToClipboardToolStripMenuItem.Text = "Copy to Clipboard"
         '
         'SaveToFileToolStripMenuItem
@@ -112,7 +112,7 @@ Partial Class frmScript
         Me.SaveToFileToolStripMenuItem.Image = CType(resources.GetObject("SaveToFileToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SaveToFileToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToFileToolStripMenuItem.Name = "SaveToFileToolStripMenuItem"
-        Me.SaveToFileToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.SaveToFileToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.SaveToFileToolStripMenuItem.Text = "Save to file..."
         '
         'OpenFromFileToolStripMenuItem
@@ -120,20 +120,20 @@ Partial Class frmScript
         Me.OpenFromFileToolStripMenuItem.Image = CType(resources.GetObject("OpenFromFileToolStripMenuItem.Image"), System.Drawing.Image)
         Me.OpenFromFileToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenFromFileToolStripMenuItem.Name = "OpenFromFileToolStripMenuItem"
-        Me.OpenFromFileToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.OpenFromFileToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.OpenFromFileToolStripMenuItem.Text = "Open from file..."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(168, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Image = CType(resources.GetObject("ExitToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ExitToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.ExitToolStripMenuItem.Text = "Close"
         '
         'OpenFileDialog1
