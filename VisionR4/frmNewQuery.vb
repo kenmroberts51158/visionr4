@@ -151,6 +151,7 @@ Public Class frmNewQuery
         Me.cboSearchValue.Text = ""
         Me.ListBoxWhereClause.Items.Clear()
         Me.cboOrderBy.Items.Clear()
+        Me.cboOrderBy.Text = ""
         Me.btnRunQuery.Enabled = False
     End Sub
 
@@ -179,6 +180,7 @@ Public Class frmNewQuery
         Me.ListBoxWhereClause.Items.Clear()
         Me.cboSelectedField.Items.Clear()
         Me.cboOrderBy.Items.Clear()
+        Me.cboOrderBy.Text = ""
         Me.cboSearchValue.Text = ""
         Me.fieldsTable = VisionHelper.getSchemaDataTable(VisionHelper.schemaType.Columns, Me.getConnectionString, CType(Me.cboTables.SelectedItem, TableListItem).TableName)
         Me.indexesTable = VisionHelper.getSchemaDataTable(VisionHelper.schemaType.Indexes, Me.getConnectionString, CType(Me.cboTables.SelectedItem, TableListItem).TableName)
@@ -439,4 +441,5 @@ Public Class frmNewQuery
         Me.txtUserId.Text = Me.visionUser.UserID
         Me.txtPassword.Text = Me.visionUser.Password
     End Sub
+
 End Class

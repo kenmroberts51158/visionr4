@@ -241,7 +241,7 @@ Partial Class frmNewQuery
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ToolStripSeparator5, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'SaveToolStripMenuItem
@@ -250,13 +250,13 @@ Partial Class frmNewQuery
         Me.SaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SaveToolStripMenuItem.Text = "S&ave Query..."
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(175, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(177, 6)
         '
         'ExitToolStripMenuItem
         '
@@ -265,14 +265,14 @@ Partial Class frmNewQuery
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeyDisplayString = ""
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CurrentSQLToolStripMenuItem, Me.RecordCountToolStripMenuItem, Me.ToolStripSeparator2, Me.ToolStripMenuItem1, Me.ToolStripMenuItem2})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "&View"
         '
         'CurrentSQLToolStripMenuItem
@@ -281,7 +281,7 @@ Partial Class frmNewQuery
         Me.CurrentSQLToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CurrentSQLToolStripMenuItem.Name = "CurrentSQLToolStripMenuItem"
         Me.CurrentSQLToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Q), System.Windows.Forms.Keys)
-        Me.CurrentSQLToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.CurrentSQLToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.CurrentSQLToolStripMenuItem.Text = "Current S&QL..."
         '
         'RecordCountToolStripMenuItem
@@ -290,13 +290,13 @@ Partial Class frmNewQuery
         Me.RecordCountToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RecordCountToolStripMenuItem.Name = "RecordCountToolStripMenuItem"
         Me.RecordCountToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.T), System.Windows.Forms.Keys)
-        Me.RecordCountToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.RecordCountToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.RecordCountToolStripMenuItem.Text = "Record Coun&t..."
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(183, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(190, 6)
         '
         'ToolStripMenuItem1
         '
@@ -304,7 +304,7 @@ Partial Class frmNewQuery
         Me.ToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(186, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(193, 22)
         Me.ToolStripMenuItem1.Text = "View &Schema..."
         '
         'ToolStripMenuItem2
@@ -313,7 +313,7 @@ Partial Class frmNewQuery
         Me.ToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.K), System.Windows.Forms.Keys)
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(186, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(193, 22)
         Me.ToolStripMenuItem2.Text = "View &Keys..."
         '
         'ToolStrip1
