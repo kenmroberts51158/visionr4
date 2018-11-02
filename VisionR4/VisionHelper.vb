@@ -273,7 +273,7 @@ Public Class VisionHelper
             sb.Append(vbCrLf)
             sb.Append("(")
             For i As Integer = 0 To dgv.ColumnCount - 1
-                If dgv.Columns(i).ValueType.ToString = "System.String" Then
+                If dgv.Columns(i).ValueType.ToString = "System.String" Or dgv.Columns(i).ValueType.ToString = "System.Guid" Then
                     sb.Append("'" & VisionHelper.removeQuote(dgv.Rows(rowNumber).Cells(i).Value.ToString()) & "',")
                 Else
                     If IsDBNull(dgv.Rows(rowNumber).Cells(i).Value) = False Then
@@ -307,7 +307,7 @@ Public Class VisionHelper
                     Else
                         sb.Append("[" & dgv.Columns(i).HeaderText & "] = ")
                     End If
-                    If dgv.Columns(i).ValueType.ToString = "System.String" Then
+                    If dgv.Columns(i).ValueType.ToString = "System.String" Or dgv.Columns(i).ValueType.ToString = "System.Guid" Then
                         sb.Append("'" & VisionHelper.removeQuote(dgv.Rows(rowNumber).Cells(i).Value.ToString()) & "' AND ")
                     Else
                         sb.Append(dgv.Rows(rowNumber).Cells(i).Value & " AND ")
@@ -343,7 +343,7 @@ Public Class VisionHelper
                     sb.Append("[" & dgv.Columns(i).HeaderText & "] = ")
                 End If
                 If IsDBNull(dgv.Rows(rowNumber).Cells(i).Value) = False Then
-                    If dgv.Columns(i).ValueType.ToString = "System.String" Then
+                    If dgv.Columns(i).ValueType.ToString = "System.String" Or dgv.Columns(i).ValueType.ToString = "System.Guid" Then
                         sb.Append("'" & VisionHelper.removeQuote(dgv.Rows(rowNumber).Cells(i).Value.ToString()) & "', ")
                     Else
                         sb.Append(dgv.Rows(rowNumber).Cells(i).Value & ", ")
@@ -363,7 +363,7 @@ Public Class VisionHelper
                     Else
                         sb.Append("[" & dgv.Columns(i).HeaderText & "] = ")
                     End If
-                    If originalValues.Cells(i).ValueType.FullName = "System.String" Then
+                    If originalValues.Cells(i).ValueType.FullName = "System.String" Or originalValues.Cells(i).ValueType.FullName = "System.Guid" Then
                         sb.Append("'" & VisionHelper.removeQuote(originalValues.Cells(i).Value.ToString()) & "' AND ")
                     Else
                         sb.Append(originalValues.Cells(i).Value & " AND ")

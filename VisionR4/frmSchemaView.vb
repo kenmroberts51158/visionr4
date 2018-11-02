@@ -25,7 +25,7 @@ Public Class frmSchemaView
     End Sub
 
     Private Sub frmSchemaView_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
-        Me.DataGridView1.Width = Me.Width - 10
+        Me.DataGridView1.Width = Me.Width - 20
         Me.DataGridView1.Height = Me.Height - 103
     End Sub
 

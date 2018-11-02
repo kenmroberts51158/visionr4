@@ -291,7 +291,7 @@ Public Class frmNewQuery
 
         For i As Integer = 0 To fieldsTable.Rows.Count - 1
             If fieldsTable.Rows(i).Item("COLUMN_NAME").ToString = Me.cboSelectedField.SelectedItem Then
-                If fieldsTable.Rows(i).Item("TYPE_NAME").ToString.ToUpper.Contains("CHAR") Then
+                If fieldsTable.Rows(i).Item("TYPE_NAME").ToString.ToUpper.Contains("CHAR") Or fieldsTable.Rows(i).Item("TYPE_NAME").ToString.ToUpper.Contains("DATE") Or fieldsTable.Rows(i).Item("TYPE_NAME").ToString.ToLower.Contains("uniqueidentifier") Then
                     temp &= "'" & Me.cboSearchValue.Text & "'"
                 Else
                     temp &= Me.cboSearchValue.Text
