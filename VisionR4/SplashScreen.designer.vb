@@ -22,7 +22,7 @@ Partial Class SplashScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
@@ -39,7 +39,7 @@ Partial Class SplashScreen
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(386, 242)
+        Me.ClientSize = New System.Drawing.Size(390, 250)
         Me.ControlBox = False
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
