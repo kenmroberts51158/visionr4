@@ -49,7 +49,7 @@ Partial Class SplashScreen
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.TransparencyKey = System.Drawing.SystemColors.ControlDarkDark
+        Me.TransparencyKey = System.Drawing.SystemColors.Control
         Me.ResumeLayout(False)
 
     End Sub
