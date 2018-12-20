@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Database Query Tool")> 
 <Assembly: AssemblyCompany("Kamikaze Software")> 
 <Assembly: AssemblyProduct("VisionR4")>
-<Assembly: AssemblyCopyright("Copyright © Kamikaze Software 1999 - 2018")>
+<Assembly: AssemblyCopyright("Copyright © Kamikaze Software")>
 <Assembly: AssemblyTrademark("VisionR4")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("4.18.340.1")>
-<Assembly: AssemblyFileVersion("4.18.340.1")>
+<Assembly: AssemblyVersion("4.18.354.1")>
+<Assembly: AssemblyFileVersion("4.18.354.1")>

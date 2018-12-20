@@ -18,6 +18,8 @@ Public Class frmSavedQueries
     Private myDataTable As DataTable
 
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.ListView1.Font = My.Settings.MyFont
+        Me.ListView1.View = My.Settings.ListView
         Me.refreshMe()
     End Sub
 
@@ -135,4 +137,23 @@ Public Class frmSavedQueries
         Me.runUserSQL(sender)
     End Sub
 
+    Private Sub LargeIconsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LargeIconsToolStripMenuItem.Click
+        Me.ListView1.View = View.LargeIcon
+        My.Settings.ListView = Me.ListView1.View
+    End Sub
+
+    Private Sub SmallIconsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SmallIconsToolStripMenuItem.Click
+        Me.ListView1.View = View.SmallIcon
+        My.Settings.ListView = Me.ListView1.View
+    End Sub
+
+    Private Sub ListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem.Click
+        Me.ListView1.View = View.List
+        My.Settings.ListView = Me.ListView1.View
+    End Sub
+
+    Private Sub TileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TileToolStripMenuItem.Click
+        Me.ListView1.View = View.Tile
+        My.Settings.ListView = Me.ListView1.View
+    End Sub
 End Class
