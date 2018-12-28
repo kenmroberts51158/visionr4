@@ -32,17 +32,17 @@ Partial Class frmSavedQueries
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LargeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SmallIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.Vision1 = New VisionR4.vision()
-        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LargeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SmallIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Vision1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,7 +87,7 @@ Partial Class frmSavedQueries
         Me.RefreshToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
         Me.RefreshToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.RefreshToolStripMenuItem.Text = "&Refresh"
         '
         'DeleteToolStripMenuItem
@@ -96,13 +96,13 @@ Partial Class frmSavedQueries
         Me.DeleteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
         Me.DeleteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.DeleteToolStripMenuItem.Text = "&Delete"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(142, 6)
         '
         'ExitToolStripMenuItem
         '
@@ -110,8 +110,39 @@ Partial Class frmSavedQueries
         Me.ExitToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'ViewToolStripMenuItem
+        '
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LargeIconsToolStripMenuItem, Me.SmallIconsToolStripMenuItem, Me.ListToolStripMenuItem, Me.TileToolStripMenuItem})
+        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.ViewToolStripMenuItem.Text = "&View"
+        '
+        'LargeIconsToolStripMenuItem
+        '
+        Me.LargeIconsToolStripMenuItem.Name = "LargeIconsToolStripMenuItem"
+        Me.LargeIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LargeIconsToolStripMenuItem.Text = "&LargeIcons"
+        '
+        'SmallIconsToolStripMenuItem
+        '
+        Me.SmallIconsToolStripMenuItem.Name = "SmallIconsToolStripMenuItem"
+        Me.SmallIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SmallIconsToolStripMenuItem.Text = "&SmallIcons"
+        '
+        'ListToolStripMenuItem
+        '
+        Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
+        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListToolStripMenuItem.Text = "&List"
+        '
+        'TileToolStripMenuItem
+        '
+        Me.TileToolStripMenuItem.Name = "TileToolStripMenuItem"
+        Me.TileToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TileToolStripMenuItem.Text = "&Tile"
         '
         'ToolStrip1
         '
@@ -158,37 +189,6 @@ Partial Class frmSavedQueries
         '
         Me.Vision1.DataSetName = "vision"
         Me.Vision1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ViewToolStripMenuItem
-        '
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LargeIconsToolStripMenuItem, Me.SmallIconsToolStripMenuItem, Me.ListToolStripMenuItem, Me.TileToolStripMenuItem})
-        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.ViewToolStripMenuItem.Text = "&View"
-        '
-        'LargeIconsToolStripMenuItem
-        '
-        Me.LargeIconsToolStripMenuItem.Name = "LargeIconsToolStripMenuItem"
-        Me.LargeIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.LargeIconsToolStripMenuItem.Text = "&LargeIcons"
-        '
-        'SmallIconsToolStripMenuItem
-        '
-        Me.SmallIconsToolStripMenuItem.Name = "SmallIconsToolStripMenuItem"
-        Me.SmallIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SmallIconsToolStripMenuItem.Text = "&SmallIcons"
-        '
-        'ListToolStripMenuItem
-        '
-        Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ListToolStripMenuItem.Text = "&List"
-        '
-        'TileToolStripMenuItem
-        '
-        Me.TileToolStripMenuItem.Name = "TileToolStripMenuItem"
-        Me.TileToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.TileToolStripMenuItem.Text = "&Tile"
         '
         'frmSavedQueries
         '

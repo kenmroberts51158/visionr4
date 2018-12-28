@@ -19,8 +19,22 @@ Public Class frmSavedQueries
 
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.ListView1.Font = My.Settings.MyFont
-        Me.ListView1.View = My.Settings.ListView
+        Me.setListViewMenuItems()
         Me.refreshMe()
+    End Sub
+
+    Private Sub setListViewMenuItems()
+        Me.ListView1.View = My.Settings.ListView
+
+        Me.LargeIconsToolStripMenuItem.Checked = False
+        Me.SmallIconsToolStripMenuItem.Checked = False
+        Me.ListToolStripMenuItem.Checked = False
+        Me.TileToolStripMenuItem.Checked = False
+
+        If Me.ListView1.View = View.LargeIcon Then Me.LargeIconsToolStripMenuItem.Checked = True
+        If Me.ListView1.View = View.SmallIcon Then Me.SmallIconsToolStripMenuItem.Checked = True
+        If Me.ListView1.View = View.List Then Me.ListToolStripMenuItem.Checked = True
+        If Me.ListView1.View = View.Tile Then Me.TileToolStripMenuItem.Checked = True
     End Sub
 
     Private Sub refreshMe()
@@ -140,20 +154,36 @@ Public Class frmSavedQueries
     Private Sub LargeIconsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LargeIconsToolStripMenuItem.Click
         Me.ListView1.View = View.LargeIcon
         My.Settings.ListView = Me.ListView1.View
+        Me.LargeIconsToolStripMenuItem.Checked = True
+        Me.SmallIconsToolStripMenuItem.Checked = False
+        Me.ListToolStripMenuItem.Checked = False
+        Me.TileToolStripMenuItem.Checked = False
     End Sub
 
     Private Sub SmallIconsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SmallIconsToolStripMenuItem.Click
         Me.ListView1.View = View.SmallIcon
         My.Settings.ListView = Me.ListView1.View
+        Me.LargeIconsToolStripMenuItem.Checked = False
+        Me.SmallIconsToolStripMenuItem.Checked = True
+        Me.ListToolStripMenuItem.Checked = False
+        Me.TileToolStripMenuItem.Checked = False
     End Sub
 
     Private Sub ListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem.Click
         Me.ListView1.View = View.List
         My.Settings.ListView = Me.ListView1.View
+        Me.LargeIconsToolStripMenuItem.Checked = False
+        Me.SmallIconsToolStripMenuItem.Checked = False
+        Me.ListToolStripMenuItem.Checked = True
+        Me.TileToolStripMenuItem.Checked = False
     End Sub
 
     Private Sub TileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TileToolStripMenuItem.Click
         Me.ListView1.View = View.Tile
         My.Settings.ListView = Me.ListView1.View
+        Me.LargeIconsToolStripMenuItem.Checked = False
+        Me.SmallIconsToolStripMenuItem.Checked = False
+        Me.ListToolStripMenuItem.Checked = False
+        Me.TileToolStripMenuItem.Checked = True
     End Sub
 End Class
