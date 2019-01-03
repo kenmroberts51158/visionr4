@@ -64,6 +64,7 @@ Public Class VisionHelper
         Columns = 1
         Tables = 2
         Indexes = 3
+        Views = 4
     End Enum
 
     Public Shared Function getSchemaTypeText(ByVal schemaType As VisionHelper.schemaType) As String
@@ -75,6 +76,8 @@ Public Class VisionHelper
                 st = "Indexes"
             Case VisionHelper.schemaType.Tables
                 st = "Tables"
+            Case VisionHelper.schemaType.Views
+                st = "Views"
         End Select
         Return st
     End Function

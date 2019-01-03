@@ -76,6 +76,7 @@ Partial Class frmNewQuery
         Me.rdoAscending = New System.Windows.Forms.RadioButton()
         Me.rdoDescending = New System.Windows.Forms.RadioButton()
         Me.ckbDistinct = New System.Windows.Forms.CheckBox()
+        Me.ShowViewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -239,7 +240,7 @@ Partial Class frmNewQuery
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ToolStripSeparator5, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.ShowViewsToolStripMenuItem, Me.ToolStripSeparator5, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -553,6 +554,12 @@ Partial Class frmNewQuery
         Me.ckbDistinct.Text = "Distinct?"
         Me.ckbDistinct.UseVisualStyleBackColor = True
         '
+        'ShowViewsToolStripMenuItem
+        '
+        Me.ShowViewsToolStripMenuItem.Name = "ShowViewsToolStripMenuItem"
+        Me.ShowViewsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowViewsToolStripMenuItem.Text = "Show Views"
+        '
         'frmNewQuery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -655,4 +662,5 @@ Partial Class frmNewQuery
     Friend WithEvents ToolStripButton6 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton7 As System.Windows.Forms.ToolStripButton
     Friend WithEvents RecordCountToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ShowViewsToolStripMenuItem As ToolStripMenuItem
 End Class

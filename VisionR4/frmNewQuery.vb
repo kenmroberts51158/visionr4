@@ -159,7 +159,12 @@ Public Class frmNewQuery
         clearCbosAndLists()
         Me.visionUser.UserID = Me.txtUserId.Text
         Me.visionUser.Password = Me.txtPassword.Text
-        Dim dt As DataTable = VisionHelper.getSchemaDataTable(VisionHelper.schemaType.Tables, Me.getConnectionString)
+        Dim dt As DataTable
+        If ShowViewsToolStripMenuItem.Checked Then
+            dt = VisionHelper.getSchemaDataTable(VisionHelper.schemaType.Views, Me.getConnectionString)
+        Else
+            dt = VisionHelper.getSchemaDataTable(VisionHelper.schemaType.Tables, Me.getConnectionString)
+        End If
         If IsNothing(dt) = False Then
             For i As Integer = 0 To dt.Rows.Count - 1
                 ''Me.cboTables.Items.Add(dt.Rows(i).Item("TABLE_NAME").ToString)
@@ -442,4 +447,8 @@ Public Class frmNewQuery
         Me.txtPassword.Text = Me.visionUser.Password
     End Sub
 
+    Private Sub ShowViewsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowViewsToolStripMenuItem.Click
+        ShowViewsToolStripMenuItem.Checked = Not ShowViewsToolStripMenuItem.Checked
+        Me.btnConnect.PerformClick()
+    End Sub
 End Class
