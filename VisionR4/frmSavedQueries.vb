@@ -19,6 +19,7 @@ Public Class frmSavedQueries
 
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.ListView1.Font = My.Settings.MyFont
+        Me.ClientSize = My.Settings.SavedQueriesSize
         Me.setListViewMenuItems()
         Me.refreshMe()
     End Sub
@@ -48,6 +49,7 @@ Public Class frmSavedQueries
         Try
             Me.myDataTable.Dispose()
             Me.myDataTable = Nothing
+            My.Settings.SavedQueriesSize = Me.ClientSize
         Catch ex As Exception
             ' just smile and wave boys, smile and wave.
         End Try

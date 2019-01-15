@@ -124,6 +124,18 @@ Namespace My
                 Me("ListView") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("400, 300")>  _
+        Public Property SavedQueriesSize() As Global.System.Drawing.Size
+            Get
+                Return CType(Me("SavedQueriesSize"),Global.System.Drawing.Size)
+            End Get
+            Set
+                Me("SavedQueriesSize") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
