@@ -508,7 +508,9 @@ Public Class VisionHelper
             If sysPath <> "" Then
                 'Spawns the ODBC Admin.
                 '======================
-                Shell(sysPath & "\ODBCAD32.exe", AppWinStyle.NormalFocus)
+                'Shell(sysPath & "\ODBCAD32.exe", AppWinStyle.NormalFocus)
+                Dim objShell = CreateObject("shell.application")
+                objShell.ShellExecute(sysPath & "\ODBCAD32.exe", "", "", "open", AppWinStyle.NormalFocus)
             End If
         Catch ex As Exception
             MsgBox("Unable to locate ODBCAD32.EXE.  Please use Control Panel to access ODBC Administrator.", MsgBoxStyle.Exclamation, My.Application.Info.Title)
