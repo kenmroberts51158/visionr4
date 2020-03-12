@@ -50,11 +50,13 @@ Partial Class frmSavedQueries
         '
         'ListView1
         '
+        Me.ListView1.HideSelection = False
         Me.ListView1.LargeImageList = Me.ImageList1
         Me.ListView1.Location = New System.Drawing.Point(0, 52)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(444, 321)
         Me.ListView1.SmallImageList = Me.ImageList1
+        Me.ListView1.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
@@ -123,25 +125,25 @@ Partial Class frmSavedQueries
         'LargeIconsToolStripMenuItem
         '
         Me.LargeIconsToolStripMenuItem.Name = "LargeIconsToolStripMenuItem"
-        Me.LargeIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LargeIconsToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.LargeIconsToolStripMenuItem.Text = "&LargeIcons"
         '
         'SmallIconsToolStripMenuItem
         '
         Me.SmallIconsToolStripMenuItem.Name = "SmallIconsToolStripMenuItem"
-        Me.SmallIconsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SmallIconsToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.SmallIconsToolStripMenuItem.Text = "&SmallIcons"
         '
         'ListToolStripMenuItem
         '
         Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.ListToolStripMenuItem.Text = "&List"
         '
         'TileToolStripMenuItem
         '
         Me.TileToolStripMenuItem.Name = "TileToolStripMenuItem"
-        Me.TileToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TileToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.TileToolStripMenuItem.Text = "&Tile"
         '
         'ToolStrip1
